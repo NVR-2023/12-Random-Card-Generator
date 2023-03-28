@@ -1,3 +1,14 @@
+***************************************************************************************************************
+Exercise #12: Random Card Generator using HTML, JavaScript, CSS, and BootStrap (28-03-2023)
+Generates and displays random cards, with random suits, values, and appropriate color.
+"Feeling confident" Extra Challenge 01: Add a button to randomize cards
+"Feeling Confident" Extra Challenge 02: Auto-randomize cards after 10 seconds.
+"Feeling Confident" Extra Challenge 03: Let the user resize the card via the input fields for height and width.
+
+Mark received:
+Date: 
+Teacher:
+***************************************************************************************************************
 # Hello World with Vanilla JS
 
 Start coding a JS/HTML/CSS website in 30 seconds by opening this template in codespaces (coming soon) or [gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git).
