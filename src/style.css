@@ -1,1 +1,17 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  height: 16.2rem;
+  width: 10.8rem;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.card-value {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5.4rem;
+}
+
+input::placeholder {
+  color: gray;
+  font-size: 0.5rem;
+  font-style: italic;
+}

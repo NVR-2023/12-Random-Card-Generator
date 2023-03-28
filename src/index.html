@@ -1,29 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random card generator using Vanilla JavaScript andBootstrap</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="src/style.css" type="text/css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      class="container-fluid bg-success d-flex align-items-center justify-content-center vh-100"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <!-- Card element -->
+        <div class="card d-flex bg-white border-0 position-relative">
+          <!-- Upper Suit icon -->
+          <div class="card-suit position-absolute top-0 start-0 p-2">
+            <i class="bi bi-suit-club-fill fs-1"></i>
+          </div>
+          <!-- Card value -->
+          <div
+            class="card-value d-flex align-items-center justify-content-center flex-grow-1 py-5"
+          >
+            9
+          </div>
+          <!-- Lower Suit Icon -->
+          <div
+            class="card-suit position-absolute bottom-0 end-0 p-2"
+            style="transform: rotate(180deg)"
+          >
+            <i class="bi bi-suit-club-fill fs-1"></i>
+          </div>
+        </div>
+        <!-- Randomize button -->
+        <div class="py-4">
+          <button class="btn btn-warning">Randomize card</button>
+        </div>
+        <!-- Inputs -->
+        <div>
+          <span
+            ><input
+              type="number"
+              name="height"
+              min="200"
+              max="1000"
+              placeholder="card height"
+          /></span>
+          <span
+            ><input
+              type="number"
+              name="width"
+              min="100"
+              max="1000"
+              placeholder="card width"
+          /></span>
+        </div>
       </div>
     </div>
+    <!-- Bootstrap JavaScript file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My own Javascript App,js file -->
+    <script src="app.js"></script>
   </body>
 </html>
